@@ -40,8 +40,8 @@ def run_alexa():
     command = take_command()
     print(command)
 
-    if 'water' in command:
-        song = command.replace('water', '')
+    if 'play' in command:
+        song = command.replace('play', '')
         talk('playing ' + song)
         pywhatkit.playonyt(song)
 
